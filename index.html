@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--Removed  type="text/css" per Front End Nanodegree Style Guide - and it still works! Yay!-->
+	<link rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
+	<title>Patrick's IPND Notes</title>
+</head>
+<body>
+	<!--I don't want border here.-->
+	<div class="section">
+		<div>
+			<h1>Intro to Programming Nanodegree</h1>
+			These notes are for the
+			<a href="https://www.udacity.com/course/introduction-to-programming-nanodegree--nd000">Intro to Programming Nanodegree</a>
+			offered by <a href="http://www.udacity.com">Udacity</a>.
+			The aim of the program is to impart fundamental programming knowledge and skills that programmers use.
+			While the Intro to Programming Nanodegree doesn't prepare students for a specific role, it seems like a great starting point.<br>
+			<br>
+			In short, I hope this course helps me figure out the best way to get ahead without working too hard.<br><br>
+		</div>
+		<div>
+			<img src="http://i.imgur.com/LbGeVhv.gif" alt="rabbit totally cheating but that's ok. who makes rabbits go through agility courses anyway!"><br><br>
+		</div>
+	</div>
+	<!--I do want borders here! And for all of the notes portions.-->
+	<!--Notes for 1.1 start here!-->
+	<div class="section border">
+		<div>
+			<h2>1.1 Notes: The Basics of Web and HTML</h2>
+		</div>
+		<div>
+			<b>Components of the Web</b><br>
+			<br>
+			The web consists of the following:
+			<ul>
+				<li>You - none of this matters without people using the web.</li>
+				<li>Computer and browser - for example, I'm typing this in a window in the Chrome browser on my MacBook Pro laptop.</li>
+				<li>The Internet - a global system of computers that use a protocol called HTTP to communicate. (I'm getting ahead of myself.)</li>
+				<li>HTTP - hypertext transfer protocol, the protocol that is the foundation of the web.</li>
+				<li>Servers - computers optimized for hosting files.</li>
+			</ul>
+		</div>
+		<div>
+			<b>How does it all work together?</b><br><br>
+			You open a <em>browser</em> (like <a href="www.google.com/chrome">Chrome</a>)
+			on your <em>laptop</em> (like I said, I use a <a href="store.apple.com/us/buy-mac/macbook-pro">Macbook Pro</a>).
+			In the address bar, you enter a <em>URL</em> (oops, should have mentioned that one earlier -
+			more info <a href="https://www.google.com/search?q=what+is+http&amp;oq=what+is+http">here</a>)
+			that tells your computer what <em>server</em> (like <a href="google.com">google.com</a>) to access.
+			<em>HTTP</em> is the protocol Chrome uses to send requests to - and receives responses from - the server.<br><br>
+		</div>
+		<div>
+			<b>Tags and Elements</b><br>
+			<br>
+			One of the first things we learned about is tags and elememts.
+			A <em>tag</em> is a hidden keyword that tells the browser how to format content.
+			An <em>element</em> consists of an opening tag, content, and a closing tag.<br>
+			<br>
+			Some example are the bold tag, <b>b</b>, and the emphasis tag, <em>em</em>.<br>
+			<br>
+			There are other types of tags that don't need to be closed. The br tag adds a line break.
+			The img tag is used to embed images, like I added above.
+			The a tag is used to add <a href="https://www.google.com/search?q=what+is+an+html+link&amp;oq=what+is+an+html+link">links</a>.
+			<br>
+			<br>
+		</div>
+		<div>
+			<b>Inline vs Block</b><br>
+			<br>
+			Some tags like b, em, and even br are inline tags, which means they are normally displayed without line breaks.<br>
+			<br>
+			Other tags like p and div, are block tags. That means they are their own elements and can have a specified height and width.<br>
+			<br>
+			OK, that's it for now. Keep up the good work and don't let the turkeys get you down!<br>
+			<br>
+		</div>
+		<div>
+			<img src="http://i.imgur.com/bcRmx.jpg" alt="lioness triumphantly eating a turkey while majestically bounding through water"><br>
+			<br>
+		</div>
+	</div>
+	<!--Notes for 1.2 start here!-->
+	<div class="section border">
+		<div>
+			<h2>1.2 Notes: Creating a Structured Document</h2>
+		</div>
+		<div>
+			<b>Overview</b><br>
+			<br>
+			We're starting with HTML and CSS, focusing on the structure of HTML documents and how browsers interpret structure. This is a great way to start because front end web development is inherently visual, so changes are automatically visible, and it's really easy to share a website with someone.<br>
+			<br>
+		</div>
+		<div>
+			<b>The Basics</b>
+			<ul>
+				<li>HTML is the structure of the web page.</li>
+				<li>CSS styles the page.</li>
+				<li>JS adds interactive components. (We're not doing any JS in this Nanodegree.)</li>
+				<li>DOM (Document Object Model) refers to the tree-like structure of the page.</li>
+			</ul>
+		</div>
+		<div>
+			<b>How Browsers Interpret Code</b><br>
+			<br>
+			Chrome's Developer Tools shows how the browser interprets code. (To reach Dev Tools, click the hamburger menu, more tools, and then developer tools.) There are a few things to remember about the code:
+			<ul>
+				<li>Not all elements are visible.</li>
+				<li>All elements are rectangular, even if they don't appear to be!</li>
+				<li>If you go deep enough in the structure, you can read the text on the page.</li>
+			</ul>
+		</div>
+		<div>
+			<b>Breaking Down a Design / Boxifying Design</b><br>
+			<br>
+			Everything in a web page is a box. When breaking down a design, there are a few different ways to "boxify" the design:
+			<ul>
+				<li>Draw boxes on with a graphics program.</li>
+				<li>Doodle on a piece of paper.</li>
+				<li>Print the page and draw on it.</li>
+				<li>Print the page and cut it out with scissors</li>
+			</ul>
+			Especially for beginners, doodling on paper seems like a good way to go. Start with the largest boxes, working from big to small. The basic layout of the boxes is most important for the time being - positioning and content can be added in the future.<br>
+			<br>
+		</div>
+		<div>
+			<b>From Boxes to HTML</b><br>
+			<br>
+			How should we create the basic structure in HTML? Create a div for every large box, and give it a name. The name we give the div is called the class. The class should give you an idea of what it's used for (like "title" or "header"), and each class name should make sense so you can remember what it's supposed to do.<br>
+			<br>
+		</div>
+	</div>
+	<!--Notes for 1.3 start here!-->
+	<div class="section border">
+		<div>
+			<h2>1.3 Notes: Adding CSS Style to HTML Structure</h2>
+		</div>
+		<div>
+			<b>Overview</b><br>
+			<br>
+			In this lesson we're diving further into CSS and learning the beginnings of an important step in learning how to apply CSS in various ways in order to avoid repetition.<br>
+			<br>
+			In fact, avoiding repetition is <u>the most</u> essential reason we use CSS - it provides a framework to move lots of styling information to a separate file, including font colors, background stles, alignments, borders, and sizes. Prior to CSS, each of these properties would have to be repeated <u>EVERY TIME</u> you wanted to apply that style! What a waste of time! (Big thanks to the <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Use">Use section</a> of Wikipedia's CSS page for helping me wrap my brain around how this works.)<br>
+			<br>
+			Here's an example of how CSS simplifies applying properties to an HTML tag - in this case we'll look at the way color and alignment would be applied to an h2 tag.<br>
+			<br>
+			Applying styling to a <u>single</u> h2 element in HTML:<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;center&gt;&lt;h2&gt;&lt;font color=#eee&gt;(text goes here)&lt;/font&gt;&lt;/h2&gt;&lt;/center&gt;<br>
+			<br>
+			Applying styling once in CSS for <u>every</u> h2 element:<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h2 {<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: #eee;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+			<br>
+			Now, I'm not using many h2 tags on this page - only six h2 elements, so far - but I'm styling all of these tags and more with CSS: div, img, a, h1, h2! Right now there are over 130 elements in the code for this page! I can make a single change in my style.css file and update any of those elements I want, instead of updating every. single. one. individually. Thank you, <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#History">Håkon Wium Lie</a>!<br>
+			<br>
+			The principle of don't repeat yourself (<a href="http://en.wikipedia.org/wiki/Don%27t_repeat_yourself">DRY</a>) is one that we all should get behind. If you're interested, there are plenty of forum discussions and blog posts about avoiding repetition in CSS, like these two:
+			<ul>
+				<li><a href="http://stackoverflow.com/questions/15374830/stop-repetition-of-css-code">Stop repetition of CSS code</a> on Stack Overflow.</li>
+				<li><a href="http://meiert.com/en/blog/20141009/css-dry-and-optimization/">CSS, DRY, and Code Optimization</a> on Jens Oliver Meiert's blog.</li>
+			</ul>
+		</div>
+		<div>
+			<b>Notes on HTML Formatting</b><br>
+			<br>
+			Up to this point we've just been working with the body of our HTML documents and ignoring the rest, for the most part. Here are a few things we've glossed over up to this point.
+			<ul>
+				<li>&lt;!DOCTYPE html&gt; - this goes at the very top of the HTML document and tells the browser it's looking at an HTML file.</li>
+				<li>&lt;html&gt;&lt;/html&gt; - everything on the page should be enclosed within these tags.</li>
+				<li>&lt;head&gt;&lt;/head&gt; - things like metadata, a link to the CSS file, and the page title should be in this section of the document.</li>
+				<li>&lt;body&gt;&lt;/body&gt; - and this is where the body of the document goes.</li>
+			</ul>
+			<br>
+		</div>
+		<div>
+			<b>CSS Basics</b><br>
+			<br>
+			CSS stands for Cascading Style Sheets. The most important part of this is the C, which stands for cascading. The concept of cascading means that, as you move through the document tree, style properties are inherited from the enclosing element, but more the most specific rule applies. There's a nice section on <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Inheritance">inheritance</a> on the Wikipedia page for CSS - it definitely helped clear things up. In general, text styles are inherited, and box styles are not.<br>
+			<br>
+		</div>
+		<div>
+			<b>Where does CSS live?</b><br>
+			<br>
+			CSS information can be stored in two places:
+			<ul>
+				<li>In the head section, within &lt;style&gt;&lt;/style&gt; tags. This usually isn't a great idea for anything other than small projects - the whole point is to write one CSS document and refer back to it.
+				</li>
+				<li>As a separate, linked document. This is almost always the best way to go. </li>
+			</ul>
+			Here's how it should look when linking the CSS file.<br>
+			&lt;head&gt;<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel="stylesheet" type="text/css" href="main.css"&gt;<br>
+			&lt;/head&gt;<br>
+			<br>
+		</div>
+		<div>
+			<b>CSS Selectors and Reference</b><br>
+			<br>
+			Style is applied to a particular selector. There are lots of different types of selectors, but for starting out we can stick with two: tags and classes.<br>
+			<br>
+			There's a lot to CSS, and we're only scratching the surface in this lesson. Here are two great resources for more info:
+			<ul>
+				<li><a href="https://css-tricks.com/how-css-selectors-work/">Selectors</a></li>
+				<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">CSS reference</a></li>
+			</ul>
+		</div>
+		<div>
+			<b>Box, Box, Box, Box, Box, Box, <a href="http://www.youtube.com/watch?v=XNtTEibFvlQ">EVERYBODY!</a></b><br>
+			<br>
+			We need to have a talk. About those boxes. There's much more to them than we've let on. They have four different parts:
+			<ol>
+				<li>Margin - clears an area around the border; no color / completely transparent.</li>
+				<li>Border - goes around padding and content; inherited from the color property of the box.</li>
+				<li>Padding - clears an area around the content; affected by the background color of the box (the space inside the box that protects content directly).</li>
+				<li>Content - the image or text that's appearing on the web page; other layers serve to protect it so they don't overlap or sit too close.</li>
+			</ol>
+			All of these properties can be individually tweaked using Chrome's developer tools. :)<br>
+			<br>
+			Here's a nice visual representation of the different parts of the box from W3 Schools.<br>
+			<br>
+			<img src="http://www.w3.org/TR/CSS2/images/boxdim.png" alt="html box diagram!">
+			<br>
+			With all these different parts of the box, it gets tricky to calculate the overall size of any box. There are a few things we can do to simplify this:
+			<ul>
+				<li>Use the box-sizing: border-box property to make the element size include the border and padding - that way the size of the box remains constant.</li>
+				<li>Set the width in percentage, and the box will change based on screen size.</li>
+			</ul>
+			<br>
+		</div>
+		<div>
+			<b>Box Positioning</b><br>
+			<br>
+			Divs normally stack on top of one another (because they're block elements). CSS offers lots of options to change a page's layout, but that gets really complicated so we're just looking at one way to manage divs... we'll just look at one layout property in this lesson.<br>
+			<br>
+			The property display: flex will allow divs to display side by side and distribute space within a container. The CSS Tricks website offers more info <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">here</a>.<br>
+			<br>
+		</div>
+		<div>
+			<b>Process and Tools</b><br>
+			<br>
+			When we first look at a design mock, here's how we should break it down (in case you forgot what we talked about in the last lesson.)
+			<ol>
+				<li>Look for natural boxes.</li>
+				<li>Look for repeated styles and semantic elements.</li>
+				<li>Write your HTML.</li>
+				<li>Apply styles, from biggest to smallest.</li>
+				<li>Fix things.</li>
+			</ol>
+			Without explicitly discussing it, we've been following a process for this entire lesson:
+			<ol>
+				<li>Write code.</li>
+				<li>See how it looks vs the design mock.</li>
+				<li>Made revisions.</li>
+				<li>Repeat until it looks like the design we've been given.</li>
+			</ol>
+			FINALLY, here are some tools that can be use to validate your code:
+			<ul>
+				<li><a href="http://validator.w3.org/#validate_by_input">HTML validator</a></li>
+				<li><a href="http://jigsaw.w3.org/css-validator/#validate_by_input">CSS validator</a></li>
+			</ul>
+			<br>
+		</div>
+		<div>
+			<b>Feedback, Tips, and Other Random Stuff</b><br>
+			<br>
+			I like to use hex color values in my style.css file, and my reviewer was kind enough to point out that I can shorten the six-digit hex codes to three-digit codes in many cases. For example, #ffffff can be shortened to #fff. In many cases, you can find a three-digit approximation that's pretty close; I substituted #888 for #838383 and you can't tell unless viewing the colors side by side. There's a great reference on shortening hex codes<a href="http://www.websiteoptimization.com/speed/tweak/hex/">here</a> if you'd like to learn more.<br>
+			<br>
+			I was also advised to avoid trailing whitespace! It's since been removed from my file - it's all gone! There's a handy way to have Sublime Text 2 remove trailing whitespace on save - you can find it on <a href="http://nategood.com/sublime-text-strip-whitespace-save">Nate Good's blog</a>. Oh! Turns out it's in the <a href="http://udacity.github.io/frontend-nanodegree-styleguide/index.html">Front End Nanodegree Styleguide document</a> too. And if you aren't following the rest of their styleguide, you probably should start soon.<br>
+			<br>
+			At this point my HTML file isn't all that long, nor is it complicated, but debugging will become more important as its length and flexibility grow. There's a great resource on <a href="http://blog.teamtreehouse.com/tips-debugging-html-css">Treehouse</a> that talks about finding syntax errors and addressing other issues. As mentioned earlier, the HTML and CSS validators are also useful for identifying issues.<br>
+			<br>
+		</div>
+	</div>
+	<!--Let's add the verified CSS thing just for fun.-->
+	<div class="section">
+		<p>
+			<a href="http://jigsaw.w3.org/css-validator/check/referer">
+				<img style="border:0;width:88px;height:31px"
+					src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+					alt="Valid CSS!" />
+			</a>
+		</p>
+	</div>
+</body>
+</html>
